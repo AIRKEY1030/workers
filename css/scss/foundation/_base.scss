@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: #333;
+  font-family: "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka,
+    "ＭＳ Ｐゴシック", "MS PGothic", "sans-serif";
+  margin: 0 auto;
+  letter-spacing: 0.1em;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: #000;
+  text-decoration: none;
+}
