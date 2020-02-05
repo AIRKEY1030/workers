@@ -177,7 +177,7 @@ html {
 body {
   color: #333;
   word-wrap: break-word;
-  font-family: "MS PGothic", "メイリオ", Osaka, "sans-serif";
+  font-family: OpenSans, "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "MS　Pゴシック", "MS PGothic", Verdana, sans-serif;
 }
 
 *,
@@ -252,6 +252,57 @@ a:active {
   color: #fff;
 }
 
+.p-service--wrapper {
+  width: 1000px;
+}
+
+.p-service--left {
+  width: 650px;
+  height: 600px;
+  font-size: 0;
+}
+
+.p-service--right {
+  width: 350px;
+  height: 600px;
+}
+
+.p-service--image__left {
+  width: 100%;
+  height: 50%;
+  transition: 0.5s;
+}
+
+.p-service--image__left:hover {
+  opacity: 0.8;
+}
+
+.p-service--image__right {
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+
+@media screen and (max-width: 1000px) {
+  .p-service--image__right {
+    display: none;
+  }
+}
+
+.p-service--image__right__mq {
+  display: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .p-service--image__right__mq {
+    display: block;
+  }
+}
+
+.p-service--image__right:hover {
+  opacity: 0.8;
+}
+
 .p-title--main {
   color: #019bdf;
   text-align: center;
@@ -263,12 +314,17 @@ a:active {
 }
 
 .p-title--sub {
+  margin-bottom: 1rem;
   color: #019bdf;
+  text-align: center;
+  font-weight: bold;
   font-size: 4rem;
 }
 
 .p-title--sub__caption {
+  margin-bottom: 3rem;
   color: #019bdf;
+  text-align: center;
   font-size: 1.2rem;
 }
 

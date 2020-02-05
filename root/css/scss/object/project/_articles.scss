@@ -1,4 +1,5 @@
 .p {
+  // news
   &-news {
     &--content {
       align-items: center;
@@ -17,6 +18,51 @@
         padding: 0.4rem 0.8rem;
         background-color: $color-main;
         color: #fff;
+      }
+    }
+  }
+  // service
+  &-service {
+    &--wrapper {
+      width: 1000px;
+    }
+    &--left {
+      width: 650px;
+      height: 600px;
+      // margin-right: 0.5rem;
+      font-size: 0;
+    }
+    &--right {
+      width: 350px;
+      height: 600px;
+    }
+    &--image {
+      &__left {
+        width: 100%;
+        height: 50%;
+        transition: 0.5s;
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+      &__right {
+        width: 100%;
+        height: 100%;
+        transition: 0.5s;
+
+        @include mq(lg) {
+          display: none;
+        }
+        &__mq {
+          display: none;
+
+          @include mq(lg) {
+            display: block;
+          }
+        }
+        &:hover {
+          opacity: 0.8;
+        }
       }
     }
   }

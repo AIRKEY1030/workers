@@ -9,10 +9,15 @@
       }
     }
     &--sub {
+      margin-bottom: 1rem;
       color: $color-main;
+      text-align: center;
+      font-weight: bold;
       font-size: 4rem;
       &__caption {
+        margin-bottom: 3rem;
         color: $color-main;
+        text-align: center;
         font-size: 1.2rem;
       }
     }
