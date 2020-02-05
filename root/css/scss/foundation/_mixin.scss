@@ -12,3 +12,11 @@ $breakpoints: (
     @content;
   }
 }
+
+//margin 0
+
+@mixin mr0 {
+  &:last-child {
+    margin-right: 0;
+  }
+}

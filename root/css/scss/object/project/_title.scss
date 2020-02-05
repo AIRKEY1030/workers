@@ -1,8 +1,12 @@
 .p {
   &-title {
-    &__main {
+    &--main {
+      color: $color-main;
       text-align: center;
       font-size: 2.8rem;
+      &__inner {
+        color: $color-sub;
+      }
     }
   }
 }
