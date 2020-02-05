@@ -20,3 +20,9 @@ $breakpoints: (
     margin-right: 0;
   }
 }
+
+@mixin mb0 {
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

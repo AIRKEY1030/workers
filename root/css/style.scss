@@ -24,6 +24,7 @@
 // Component
 // -----------------------------------------------------------------
 
+@import "./scss/object/component/display";
 @import "./scss/object/component/button";
 
 // -----------------------------------------------------------------
@@ -33,10 +34,11 @@
 @import "./scss/object/project/articles";
 @import "./scss/object/project/title";
 @import "./scss/object/project/nav";
+@import "./scss/object/project/img";
 
 // -----------------------------------------------------------------
 // Utility
 // -----------------------------------------------------------------
 
-@import "./scss/object/utility/display";
 @import "./scss/object/utility/margin";
+@import "./scss/object/utility/color";

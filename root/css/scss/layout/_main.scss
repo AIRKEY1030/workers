@@ -1,2 +1,9 @@
 .l-main {
+  padding: 50px 0;
+  width: 100%;
+  &--bg {
+    background-color: $color-background;
+
+    @extend .l-main;
+  }
 }

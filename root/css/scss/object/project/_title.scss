@@ -8,5 +8,13 @@
         color: $color-sub;
       }
     }
+    &--sub {
+      color: $color-main;
+      font-size: 4rem;
+      &__caption {
+        color: $color-main;
+        font-size: 1.2rem;
+      }
+    }
   }
 }

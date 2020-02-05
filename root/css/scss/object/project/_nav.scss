@@ -4,10 +4,10 @@
     margin-right: 30px;
     padding: 3rem 0;
     font-size: 1.4rem;
+    line-height: 1.9rem;
     &__border {
       &::after {
         display: block;
-        padding-top: 0.5rem;
         width: 0;
         border-bottom: 1px solid $color-main;
         content: "";
@@ -19,10 +19,12 @@
     }
     &__contact {
       margin-right: calc(-1 * (100vw - 1000px) / 2);
+      padding: 3rem 0;
       width: calc((100vw - 1000px) / 2);
       background-color: $color-main;
       color: #fff;
       text-align: center;
+      line-height: 2rem;
       transition: 0.5s;
 
       @extend .p-nav--header;
