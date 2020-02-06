@@ -30,16 +30,31 @@
       width: 650px;
       height: 600px;
       font-size: 0;
+
+      @include mq(xl) {
+        width: 100%;
+        height: auto;
+      }
     }
     &--right {
       width: 350px;
       height: 600px;
+
+      @include mq(xl) {
+        width: 100%;
+        height: auto;
+      }
     }
     &--image {
       &__left {
         width: 100%;
         height: 50%;
         transition: 0.5s;
+
+        @include mq(xl) {
+          display: block;
+          height: auto;
+        }
         &:hover {
           opacity: 0.8;
         }
@@ -49,14 +64,16 @@
         height: 100%;
         transition: 0.5s;
 
-        @include mq(lg) {
+        @include mq(xl) {
           display: none;
         }
         &__mq {
           display: none;
 
-          @include mq(lg) {
+          @include mq(xl) {
             display: block;
+            width: 100%;
+            height: 100%;
           }
         }
         &:hover {

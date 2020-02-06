@@ -2,6 +2,10 @@
   &-wrapper {
     margin: 0 auto;
     width: 1000px;
+
+    @include mq(xl) {
+      width: 100%;
+    }
   }
   &-flex {
     display: flex;
@@ -13,5 +17,10 @@
   &-center {
     align-items: center;
     justify-content: center;
+  }
+  &-column--mq {
+    @include mq(xl) {
+      flex-direction: column;
+    }
   }
 }
