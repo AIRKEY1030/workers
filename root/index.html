@@ -14,7 +14,7 @@
 
 <body>
     <!-- header -->
-    <header class="l-header" style="display: none;">
+    <header class="l-header">
         <div class="l-wrapper l-flex l-space-between">
             <a href="#">
                 <h1 class="p-title--main">Az <span class="p-title--main__inner">Works</span></h1>
@@ -63,7 +63,12 @@
     <!-- header -->
 
     <!-- main-visual -->
-    <img src="./img/Hero@2x.png" alt="main-visual" class="p-main-visual">
+    <!-- <img src="./img/Hero@2x.png" alt="main-visual" class="p-main-visual"> -->
+    <div class="p-main-visual">
+        <div class="l-wrapper">
+            <p class="p-main-visual--text">明日の自分がきっと見つかる</p>
+        </div>
+    </div>
     <!-- main-visual -->
 
     <!-- main -->
@@ -71,7 +76,7 @@
 
         <!-- news -->
         <article class="l-main">
-            <div class="l-flex l-wrapper">
+            <div class="l-flex l-wrapper l-column--mq">
                 <div class="u-mr40">
                     <h2 class="p-title--sub">News</h2>
                     <p class="p-title--sub__caption u-color--black">一覧を見る ></p>

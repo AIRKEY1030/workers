@@ -8,6 +8,10 @@
     &r {
       &40 {
         margin-right: 4rem;
+
+        @include mq(xl) {
+          margin-right: 0;
+        }
       }
     }
   }

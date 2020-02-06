@@ -4,7 +4,7 @@
     width: 1000px;
 
     @include mq(xl) {
-      width: 100%;
+      width: 90%;
     }
   }
   &-flex {

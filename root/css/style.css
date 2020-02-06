@@ -220,7 +220,7 @@ a:active {
 
 @media screen and (max-width: 1200px) {
   .l-wrapper {
-    width: 100%;
+    width: 90%;
   }
 }
 
@@ -469,6 +469,27 @@ a:active {
 
 .p-main-visual {
   width: 100vw;
+  height: 70vh;
+  background-image: url(../img/Hero@2x.png);
+  background-position: 50% 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 1200px) {
+  .p-main-visual {
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+  }
+}
+
+.p-main-visual--text {
+  padding-top: 10rem;
+  color: #fff;
+  text-align: right;
+  font-size: 6rem;
+  font-family: serif;
 }
 
 .u-mb30 {
@@ -477,6 +498,12 @@ a:active {
 
 .u-mr40 {
   margin-right: 4rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .u-mr40 {
+    margin-right: 0;
+  }
 }
 
 .u-color--black {
