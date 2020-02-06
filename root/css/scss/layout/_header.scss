@@ -1,3 +1,9 @@
 .l-header {
   width: 100%;
+
+  @include mq(xl) {
+    position: fixed;
+    padding: 20px 0;
+    background-color: #fff;
+  }
 }

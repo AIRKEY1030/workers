@@ -36,21 +36,20 @@
       }
     }
     &--footer {
-      margin-right: 5rem;
       @include mr0();
       &-main {
         margin-bottom: 4rem;
       }
 
       &__title {
-        font-size: 2rem;
         margin-bottom: 3rem;
         color: #fff;
+        font-size: 2rem;
       }
       &__item {
-        font-size: 0.14rem;
         margin-bottom: 1.4rem;
         color: #fff;
+        font-size: 0.14rem;
       }
     }
   }

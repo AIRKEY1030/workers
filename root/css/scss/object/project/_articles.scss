@@ -86,6 +86,7 @@
   &-about {
     &--img {
       width: 100%;
+      font-size: 0;
       transition: 0.5s;
       &:hover {
         opacity: 0.8;
@@ -95,7 +96,8 @@
   //contact
   &-contact {
     &--wrapper {
-      width: 500px;
+      max-width: 500px;
+      width: 90%;
     }
     &--caption {
       color: $color-main;

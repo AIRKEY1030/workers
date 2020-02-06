@@ -204,6 +204,14 @@ a:active {
   width: 100%;
 }
 
+@media screen and (max-width: 1200px) {
+  .l-header {
+    position: fixed;
+    padding: 20px 0;
+    background-color: #fff;
+  }
+}
+
 .l-main, .l-main:nth-child(odd) {
   padding: 50px 0;
   width: 100%;
@@ -229,7 +237,6 @@ a:active {
 }
 
 .l-space-between {
-  align-items: center;
   justify-content: space-between;
 }
 
@@ -264,23 +271,33 @@ a:active {
   box-shadow: none;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
   .c-btn--hamburger__nav {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    z-index: 2;
+    padding-top: 50px;
+    padding-left: 3rem;
+    width: 300px;
+    height: 100%;
+    background: rgba(48, 208, 237, 0.5);
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .c-btn--hamburger__btn {
     position: fixed;
     top: 20px;
     right: 20px;
     z-index: 3;
-    display: block;
-    box-sizing: border-box;
     width: 30px;
-    height: 24px;
+    height: 28px;
     cursor: pointer;
     -webkit-transition: all 400ms;
     transition: all 400ms;
   }
-}
-
-@media screen and (max-width: 1000px) {
   .c-btn--hamburger__btn__span {
     position: absolute;
     width: 30px;
@@ -294,10 +311,10 @@ a:active {
     top: 0;
   }
   .c-btn--hamburger__btn__span:nth-child(2) {
-    top: 10px;
+    top: 12px;
   }
   .c-btn--hamburger__btn__span:nth-child(3) {
-    top: 20px;
+    top: 24px;
   }
 }
 
@@ -403,6 +420,7 @@ a:active {
 
 .p-about--img {
   width: 100%;
+  font-size: 0;
   transition: 0.5s;
 }
 
@@ -411,7 +429,8 @@ a:active {
 }
 
 .p-contact--wrapper {
-  width: 500px;
+  max-width: 500px;
+  width: 90%;
 }
 
 .p-contact--caption {
@@ -480,10 +499,6 @@ a:active {
   background-color: #30d0ed;
 }
 
-.p-nav--footer {
-  margin-right: 5rem;
-}
-
 .p-nav--footer:last-child {
   margin-right: 0;
 }
@@ -493,15 +508,15 @@ a:active {
 }
 
 .p-nav--footer__title {
-  font-size: 2rem;
   margin-bottom: 3rem;
   color: #fff;
+  font-size: 2rem;
 }
 
 .p-nav--footer__item {
-  font-size: 0.14rem;
   margin-bottom: 1.4rem;
   color: #fff;
+  font-size: 0.14rem;
 }
 
 .p-main-visual {
@@ -541,6 +556,10 @@ a:active {
   .u-mr40 {
     margin-right: 0;
   }
+}
+
+.u-fz0 {
+  font-size: 0;
 }
 
 .u-color--black {
