@@ -10,6 +10,27 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="./js/main.js"></script>
     <script>console.log("test");</script>
+    <script type="text/javascript">
+        $(function () {
+            $(".c-btn--hamburger__btn").on("click", function () {
+                // ハンバーガーメニューの位置を設定
+                var rightVal = 0;
+                if ($(this).hasClass("open")) {
+                    // 位置を移動させメニューを開いた状態にする
+                    rightVal = -300;
+                    // メニューを開いたら次回クリック時は閉じた状態になるよう設定
+                    $(this).removeClass("open");
+                } else {
+                    // メニューを開いたら次回クリック時は閉じた状態になるよう設定
+                    $(this).addClass("open");
+                }
+
+                $(".c-btn--hamburger__nav").stop().animate({
+                    right: rightVal
+                }, 200);
+            });
+        });
+    </script>
 </head>
 
 <body>
@@ -19,45 +40,52 @@
             <a href="#">
                 <h1 class="p-title--main">Az <span class="p-title--main__inner">Works</span></h1>
             </a>
-            <nav>
-                <ul class="l-flex">
-                    <li>
-                        <a href="#">
-                            <div class="p-nav--header p-nav--header__border">ニュース</div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <div class="p-nav--header p-nav--header__border">サービス</div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <div class="p-nav--header p-nav--header__border">CSR</div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <div class="p-nav--header p-nav--header__border">IR情報</div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <div class="p-nav--header p-nav--header__border">会社概要</div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <div class="p-nav--header p-nav--header__border">採用情報</div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <div class="p-nav--header__contact">お問い合わせ</div>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
+            <div>
+                <p class="c-btn--hamburger__btn">
+                    <span class="c-btn--hamburger__btn__span"></span>
+                    <span class="c-btn--hamburger__btn__span"></span>
+                    <span class="c-btn--hamburger__btn__span"></span>
+                </p>
+                <nav class="c-btn--hamburger__nav">
+                    <ul class="l-flex">
+                        <li>
+                            <a href="#">
+                                <div class="p-nav--header p-nav--header__border">ニュース</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="p-nav--header p-nav--header__border">サービス</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="p-nav--header p-nav--header__border">CSR</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="p-nav--header p-nav--header__border">IR情報</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="p-nav--header p-nav--header__border">会社概要</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="p-nav--header p-nav--header__border">採用情報</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="p-nav--header__contact">お問い合わせ</div>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
     <!-- header -->
