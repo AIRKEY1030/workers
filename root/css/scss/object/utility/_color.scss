@@ -1,5 +1,10 @@
 .u {
   &-color {
-    color: #333;
+    &--black {
+      color: #333;
+    }
+    &--white {
+      color: #fff;
+    }
   }
 }

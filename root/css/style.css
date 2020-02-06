@@ -194,6 +194,12 @@ a:active {
   text-decoration: none;
 }
 
+.l-footer {
+  padding: 50px 0 10px;
+  width: 100%;
+  background-color: #019bdf;
+}
+
 .l-header {
   width: 100%;
 }
@@ -402,6 +408,30 @@ a:active {
   background-color: #30d0ed;
 }
 
+.p-nav--footer {
+  margin-right: 5rem;
+}
+
+.p-nav--footer:last-child {
+  margin-right: 0;
+}
+
+.p-nav--footer-main {
+  margin-bottom: 4rem;
+}
+
+.p-nav--footer__title {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  color: #fff;
+}
+
+.p-nav--footer__item {
+  font-size: 0.14rem;
+  margin-bottom: 1.4rem;
+  color: #fff;
+}
+
 .p-main-visual {
   width: 100vw;
 }
@@ -414,6 +444,10 @@ a:active {
   margin-right: 4rem;
 }
 
-.u-color {
+.u-color--black {
   color: #333;
+}
+
+.u-color--white {
+  color: #fff;
 }

@@ -1,36 +1,56 @@
 .p {
-  &-nav--header {
-    display: block;
-    margin-right: 30px;
-    padding: 3rem 0;
-    font-size: 1.4rem;
-    line-height: 1.9rem;
-    &__border {
-      &::after {
-        display: block;
-        width: 0;
-        border-bottom: 1px solid $color-main;
-        content: "";
-        transition: all 0.3s ease;
+  &-nav {
+    &--header {
+      display: block;
+      margin-right: 30px;
+      padding: 3rem 0;
+      font-size: 1.4rem;
+      line-height: 1.9rem;
+      &__border {
+        &::after {
+          display: block;
+          width: 0;
+          border-bottom: 1px solid $color-main;
+          content: "";
+          transition: all 0.3s ease;
+        }
+        &:hover::after {
+          width: 100%;
+        }
       }
-      &:hover::after {
-        width: 100%;
+      &__contact {
+        margin-right: calc(-1 * (100vw - 1000px) / 2);
+        padding: 3rem 0;
+        width: calc((100vw - 1000px) / 2);
+        background-color: $color-main;
+        color: #fff;
+        text-align: center;
+        line-height: 2rem;
+        transition: 0.5s;
+
+        @extend .p-nav--header;
+
+        &:hover {
+          background-color: $color-sub;
+        }
       }
     }
-    &__contact {
-      margin-right: calc(-1 * (100vw - 1000px) / 2);
-      padding: 3rem 0;
-      width: calc((100vw - 1000px) / 2);
-      background-color: $color-main;
-      color: #fff;
-      text-align: center;
-      line-height: 2rem;
-      transition: 0.5s;
+    &--footer {
+      margin-right: 5rem;
+      @include mr0();
+      &-main {
+        margin-bottom: 4rem;
+      }
 
-      @extend .p-nav--header;
-
-      &:hover {
-        background-color: $color-sub;
+      &__title {
+        font-size: 2rem;
+        margin-bottom: 3rem;
+        color: #fff;
+      }
+      &__item {
+        font-size: 0.14rem;
+        margin-bottom: 1.4rem;
+        color: #fff;
       }
     }
   }
