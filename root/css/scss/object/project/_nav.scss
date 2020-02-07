@@ -6,6 +6,11 @@
       padding: 3rem 0;
       font-size: 1.4rem;
       line-height: 1.9rem;
+
+      @include mq(xl) {
+        margin-right: 0;
+        color: #fff;
+      }
       &__border {
         &::after {
           display: block;
@@ -16,6 +21,10 @@
         }
         &:hover::after {
           width: 100%;
+
+          @include mq(xl) {
+            width: 0;
+          }
         }
       }
       &__contact {
@@ -29,14 +38,29 @@
         transition: 0.5s;
 
         @extend .p-nav--header;
+        @include mq(xl) {
+          margin-right: 0;
+          width: auto;
+          background-color: transparent;
+          text-align-last: left;
+        }
 
         &:hover {
           background-color: $color-sub;
+
+          @include mq(xl) {
+            background-color: transparent;
+          }
         }
       }
     }
     &--footer {
       @include mr0();
+      @include mq(xl) {
+        margin-bottom: 3rem;
+
+        @include mb0();
+      }
       &-main {
         margin-bottom: 4rem;
       }
@@ -44,12 +68,21 @@
       &__title {
         margin-bottom: 3rem;
         color: #fff;
-        font-size: 2rem;
+
+        @include mq(xl) {
+          margin-bottom: 1.4rem;
+          font-size: 2rem;
+        }
       }
       &__item {
         margin-bottom: 1.4rem;
         color: #fff;
         font-size: 0.14rem;
+
+        @include mq(xl) {
+          margin-bottom: 1rem;
+          font-size: 1.2rem;
+        }
       }
     }
   }

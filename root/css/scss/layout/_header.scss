@@ -3,6 +3,7 @@
 
   @include mq(xl) {
     position: fixed;
+    z-index: 5;
     padding: 20px 0;
     background-color: #fff;
   }

@@ -4,4 +4,11 @@
       font-size: 0;
     }
   }
+  &-br {
+    display: none;
+
+    @include mq(xl) {
+      display: block;
+    }
+  }
 }

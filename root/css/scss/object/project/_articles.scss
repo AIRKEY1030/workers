@@ -8,11 +8,25 @@
       border-bottom: 1px solid $color-main;
       font-size: 1.2rem;
 
+      @include mq(xl) {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 0.5rem 0.5rem;
+        border-bottom: none;
+        border-left: 3px solid $color-main;
+        background: #fff;
+      }
       @include mb0();
       &__item {
         margin-right: 2rem;
 
         @include mr0;
+        @include mq(xl) {
+          margin-right: 0;
+          margin-bottom: 1rem;
+
+          @include mb0;
+        }
       }
       &__tag {
         padding: 0.4rem 0.8rem;
